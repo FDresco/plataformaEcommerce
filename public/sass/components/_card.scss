@@ -1,0 +1,206 @@
+
+.card {
+    outline: none;
+    flex-grow: 1;
+    width: 220px;
+    max-width: 250px;
+    height: 200px;  
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
+    border-radius: 5px;
+    border: 3px solid var(--color-bordes);
+    transition: all .4s;
+
+    &:hover, 
+    &:focus {
+        -moz-transform: perspective(1.03, 0.5);
+        -webkit-transform: perspective(1.03, 0.5);
+        transform: perspective(1.03, 0.5) skewX();
+        -moz-transform-origin: top;
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        box-shadow: 0 27px 58px rgba(0,0,0, .05), 0 3 3px rgba(0,0,0, .01);
+        height: 400px;
+    }
+
+    &:nth-child(2n) {
+        background: linear-gradient(90deg, rgba(188, 65, 202, 0.575) 39%, rgba(101, 7, 110, 0.589) 99%);
+        color: rgba(6, 75, 11, 0.993);
+        
+
+    }
+
+    &:nth-child(2n + 1) {
+        background: linear-gradient(90deg, rgba(54, 167, 63, 0.596) 39%, rgba(59, 153, 35, 0.527) 100%);
+        color: var(--color-toggle);
+    }
+
+    &__image-container {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+    }
+
+
+    &:hover &__image-container,
+    &:focus &__image-container {
+        -webkit-clip-path: circle(50% at 50% 50%); 
+       clip-path: circle(50% at 50% 50%); 
+        
+    }
+
+    &__image {
+        object-fit: cover;
+        transition: .2s;
+        box-sizing:border-box;
+        overflow: hidden;
+        display:block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    &:hover &__image,
+    &:focus &__image {
+        transition: .2s;
+        transform: scale(1.8) rotate(5deg);
+        transform-origin: center;
+    
+    }
+
+    &__content {
+        padding: 1em;
+    }
+
+
+    &__description {
+        background: rgba(115, 142, 211, 0.28);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.8px);
+        -webkit-backdrop-filter: blur(4.8px);
+        border: 1px solid rgba(115, 142, 211, 0.11);
+        text-align: center;
+        font-size: 13px;
+        color: black;
+        font-weight: 600;
+ 
+    }  
+
+
+
+    &:nth-of-type(2) {
+    img {
+        background: no-repeat top right url(/img/productos/camara-canon.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+    }
+
+    }
+
+
+    &:nth-of-type(3) {
+    img { 
+        background: no-repeat top url(/img/productos/celular-samsung.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    }
+
+    &:nth-of-type(4) {
+    img { 
+        background: no-repeat top url(/img/productos/chromecast-google.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}
+
+    }
+
+    &:nth-of-type(5) {
+    img { 
+        background: no-repeat top url(/img/productos/dji-mavic-2-pro.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+
+    }
+
+    &:nth-of-type(6) {
+    img { 
+        background: no-repeat top url(/img/productos/apple-iphone-12.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+
+    }
+
+    &:nth-of-type(7) {
+    img { 
+        background: no-repeat top url(/img/productos/modem-motorola.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+
+    }
+
+    &:nth-of-type(8) {
+    img { 
+        background: no-repeat top url(/img/productos/motorola-moto-e7.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}  
+    }
+
+    &:nth-of-type(9) {
+    img { 
+        background: no-repeat top url(/img/productos/drone-dji.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    }   
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn__agregar {
+    background: no-repeat center/100% url(/icons/carrito-agrega.svg);
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px var(--color-bordes), 0 4px 8px var(--color-toggle);
+    background-color: rgba(236, 132, 12, 0.829);
+    border-radius: 4px;
+    border: 2px solid rgba(26, 25, 25, 0.63);
+    position: relative;
+    top: 3px; left: 80px;
+
+     &:hover {
+        filter: brightness(1.25);
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

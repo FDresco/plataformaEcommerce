@@ -1,0 +1,52 @@
+body {
+    background: repeat url(/img/inicio/inicio-fondo-3.jpg);
+}
+
+
+.section-cards {
+    font-family: 'Changa', sans-serif;
+    padding-left: 15em;
+    padding-right: 15em;
+        @media (max-width: 768px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+&__header {
+      text-align: center;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        font-size: 20px
+      }
+    
+    & h1 {
+    color:  rgba(115, 8, 124, 0.904);
+    text-shadow: 0 2px 3px  rgb(39, 38, 38);
+        }
+
+    & p {
+    text-shadow: 0 1px 1px rgb(56, 53, 53);
+        }
+   }
+
+
+
+//
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    text-align: center;
+
+
+        @media (max-width: 768px) {
+            gap: 1em;
+        }
+    }
