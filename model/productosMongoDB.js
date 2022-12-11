@@ -22,7 +22,7 @@ class ProductoModelMongoDB {
 
   async conectarDB() {
     try {
-      await mongoose.connect(process.env.URI_MONGODB_LOCAL);
+      await mongoose.connect(process.env.URI_MONGODB_REMOTA); //URI_MONGODB_REMOTA //LOCAL
       console.log("Base de datos conectada!");
     } catch (error) {
       console.log(`MongoDB error al conectar ${error}`);
