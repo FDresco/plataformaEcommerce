@@ -285,6 +285,7 @@ body {
   display: flex;
   font-family: "Changa", sans-serif;
   background-position: 50% -50%;
+  margin-left: 15px;
 }
 @media (max-width: 768px) {
   .main-contacto {
