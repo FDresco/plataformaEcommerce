@@ -58,4 +58,4 @@ function initCarrito() {
   cerrarCarrito(elemSectionCarrito)
 }
 
-//initCarrito()
+initCarrito()
